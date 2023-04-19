@@ -2,7 +2,7 @@
 
 <br>
 
-**BSCAN-GO** is a golang package made for Developers, Forensics Analysts, Infrastructure Engineers, Network Administrators and Entrepreneurs to use to obtain information and monitoring about certain computing devices. You can use your creativity to solve problems across mobile and web apps using **bscan-go**. 
+[**BSCAN-GO**](https://pkg.go.dev/github.com/BarcaWebCloud/bscan-go) is a golang package made for Developers, Forensics Analysts, Infrastructure Engineers, Network Administrators and Entrepreneurs to use to obtain information and monitoring about certain computing devices. You can use your creativity to solve problems across mobile and web apps using **bscan-go**. 
 <br>
 With a plethora of capabilities in Scanning Hardware, Software and Atmospheric Systems.
 
@@ -30,6 +30,82 @@ A Go library for scan any computational device and atmospheric environment.
 Requeriments:
 
 * [GO lang](https://go.dev/doc/install)
+
+<br>
+<br>
+
+
+## Publishing
+
+Publishing steps
+Use the following steps to publish a module.
+
+Open a command prompt and change to your module’s root directory in the local repository.
+
+Run go mod tidy, which removes any dependencies the module might have accumulated that are no longer necessary.
+
+<br>
+
+```
+go mod tidy
+```
+
+<br>
+
+Run `go test ./...` a final time to make sure everything is working.
+
+This runs the unit tests you’ve written to use the Go testing framework.
+
+<br>
+
+```
+go test ./...
+```
+
+ok      example.com/mymodule       0.015s
+Tag the project with a new version number using the git tag command.
+
+<br>
+
+For the version number, use a number that signals to users the nature of changes in this release. For more, see Module version numbering.
+
+<br>
+
+```
+git commit -m "mymodule: changes for v0.1.0"
+git tag v0.1.0
+```
+
+<br>
+
+Push the new tag to the origin repository.
+
+<br>
+
+```
+git push origin v0.1.0
+```
+
+<br>
+
+Make the module available by running the go list command to prompt **Go** to update its index of modules with information about the module you’re publishing.
+Precede the command with a statement to set the `GOPROXY` environment variable to a **Go proxy**. This will ensure that your request reaches the *proxy*.
+
+<br>
+
+```
+GOPROXY=proxy.golang.org go list -m github.com/BarcaWebCloud/bscan-go@v0.1.0
+```
+
+<br>
+
+Developers interested in your module import a package from it and run the `go get` command just as they would with any other module. They can run the `go get` command for latest versions or they can specify a particular version, as in the following example:
+
+<br>
+
+```
+go get github.com/BarcaWebCloud/bscan-go@v0.1.0
+```
 
 <br>
 <br>
