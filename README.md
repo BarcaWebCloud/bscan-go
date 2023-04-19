@@ -1,4 +1,13 @@
-## bscan-go 0.1.0
+## BSCAN-GO 0.1.0
+
+<br>
+
+**BSCAN-GO** is a golang package made for Developers, Forensics Analysts, Infrastructure Engineers, Network Administrators and Entrepreneurs to use to obtain information and monitoring about certain computing devices. You can use your creativity to solve problems across mobile and web apps using **bscan-go**. 
+<br>
+With a plethora of capabilities in Scanning Hardware, Software and Atmospheric Systems.
+
+<br>
+<br>
 
 ### Get the bscan-go module
 
@@ -16,9 +25,9 @@ go get github.com/BarcaWebCloud/bscan-go@v0.1.0
 
 A Go library for scan any computational device and atmospheric environment.
 
-Requeriments:
-
 <br>
+
+Requeriments:
 
 * [GO lang](https://go.dev/doc/install)
 
@@ -83,3 +92,20 @@ For more information on testing, run this command:
 ```
 go help testflag
 ```
+
+<br>
+<br>
+
+## Add Tags
+
+To publish different versions of your package you need to tag it like this:
+
+<br>
+
+```
+git tag v0.1.x
+git push origin --tags
+```
+<br>
+
+You need to update the tags after pushing or merging everything to the **main branch**.
